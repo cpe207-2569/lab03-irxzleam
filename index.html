@@ -4,41 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>My Portfolio</h1>
     </header>
     <nav>
-      <a href="index.html">Home</a> | <a href="experience.html">Experience</a> |
-      <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a> | <a href="favorites.html">Favorites</a> |
+      <a href="gallery.html">Gallery</a> | <a href="contact.html">Contact</a>
     </nav>
     <main>
-      <section id="profile-picture">
-        <img
-          src="get_image_hi.jpg"
-          alt="My Pic"
-          width="200"
-        />
-      </section>
-
-      <section id="about">
-        <h2>ศิรวิทย์ อินทจักร์</h2>
-        <p>สวัสดีครับ ผม ศิรวิทย์ อินทจักร์ <br> เป็นนักศึกษาวิศวกรรมศาสตร์ สาขาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่</p>
-      </section>
-
-      <section id="skills">
-        <h2> ทักษะที่มี:</h2>
-        <div class="skill-box">
-          <h3>Programming</h3>
-          <p>ผ่านการทำโปรเจกต์ทางวิชาการที่เน้นการเขียนโปรแกรม C++</p>
+      <div
+        class="d-flex justify-content-center align-items-center mx-auto gap-3"
+        style="max-width: 700px"
+      >
+        <div>
+          <img
+            src="pic/get_image_hi.jpg"
+            class="rounded-circle img-fluid shadow-lg"
+            width="180"
+            height="180"
+            style="object-fit: cover"
+          />
         </div>
-        <div class="skill-box">
-          <h3>Content Creation</h3>
-          <p>สามารถสร้างและตัดต่อวิดีโอด้วย CapCut <br>โดยให้ความสำคัญกับคุณภาพเสียงในวิดีโอ</p>
+
+        <div class="d-none d-sm-block">
+          <div class="display-5 mb-3">ศิรวิทย์ อินทจักร์</div>
+          <div class="text-muted lh-base">
+            สวัสดีครับ ผม ศิรวิทย์ อินทจักร์ เป็นนักศึกษาวิศวกรรมศาสตร์
+            สาขาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเชียงใหม่
+          </div>
         </div>
-      </section>
+      </div>
+
+      <div style="max-width: 700px" class="mx-auto px-3">
+        <div class="d-flex border mb-3 shadow-sm my-rounded-all">
+          <div class="my-rounded-left">
+            <img
+              src="pic/c++pic.jpg"
+              width="150px"
+              height="100%"
+              style="object-fit: cover"
+              class="my-rounded-left d-none d-sm-block"
+            />
+          </div>
+          <div class="p-4">
+            <p class="text-start fw-semibold fs-5">Programming</p>
+            <span class="text-muted lh-base">
+              ถนัดเขียนโปรแกรมด้วย C++ ครับ ชอบการออกแบบระบบที่ต้องใช้ Logic
+              ลึกๆ และจัดการข้อมูลให้ทำงานได้เร็วและเสถียร
+            </span>
+          </div>
+        </div>
+
+        <div class="d-flex border mb-3 shadow-sm my-rounded-all">
+          <div class="p-4">
+            <p class="text-start fw-semibold fs-5">Teamwork</p>
+            <span class="text-muted lh-base">
+              เป็นคนทำงานเป็นทีมได้ดี สื่อสารกับคนอื่นรู้เรื่อง
+              ชอบแลกเปลี่ยนไอเดีย
+              และพร้อมช่วยกันดันโปรเจกต์ให้สำเร็จไปพร้อมกับเพื่อนร่วมทีม
+            </span>
+          </div>
+          <div class="my-rounded-right">
+            <img
+              src="pic/teamworkkk.jpg"
+              width="150px"
+              height="100%"
+              style="object-fit: cover"
+              class="my-rounded-right d-none d-sm-block"
+            />
+          </div>
+        </div>
+
+        <div class="d-flex border mb-3 shadow-sm my-rounded-all">
+          <div class="my-rounded-left">
+            <img
+              src="pic/cpppcut.jpg"
+              width="150px"
+              height="100%"
+              style="object-fit: cover"
+              class="my-rounded-left d-none d-sm-block"
+            />
+          </div>
+          <div class="p-4">
+            <p class="text-start fw-semibold fs-5">Video Editing</p>
+            <span class="text-muted lh-base">
+              สามารถตัดต่อให้งานดูไหลลื่น สามารถลำดับภาพ ใส่ลูกเล่น
+              และเล่าเรื่องได้น่าสนใจ ไม่ว่าจะงานสั้นๆ หรือคลิปยาวๆ ก็ทำได้
+            </span>
+          </div>
+        </div>
+      </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
